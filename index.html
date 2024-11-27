@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">
+            <img src="images/Logo .png"/>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="Movies.html">movies</a></li>
+            <li><a href="Tvshows.html">tv shows</a></li>
+            <li><a href="Games and apps.html">games&apps</a></li>
+            <li><a href="Collections.html">collections</a></li>
+            <li><a href="Feedback1.html">feedback</a></li>
+        </ul>
+  <form action="" class="search-box">
+      <input type="text" name="search" placeholder="Search Site" class="search-input" required/>
+      <button type="submit">
+          <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+      </button>
+   </form>
+  </nav>
+
+  <div class="container">
+    <div class="logo">
+      <img src="images/Logo .png" alt="Warner Bros Logo">
+    </div>
+    <h2>Warner Bros Feedback Form</h2>
+    <form id="feedbackForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" required>
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <a href="thank_you.html" id="submitBtn">Submit</a>
+      <div id="confirmationMessage" style="display: none;">
+        Thank you for your submission!
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+body{
+    background: black;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 5px solid rgba(0,0,0,0.04);
+    border-color: #306af0;
+    border-radius: 15px;
+    background: color #080808;;
+}
+.logo img{
+    height: 65px;
+}
+nav .menu{
+    display: flex;
+}
+nav .menu li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #585858;
+    letter-spacing: 1px;
+}
+.search-box{
+    width: 250px;
+    height: 40px;
+    background-color: #d1d1d111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0px 20px;
+    justify-content: flex-end;
+}
+.search-box input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+}
+.search-box input::placeholder {
+    color: #ffffff;
+}
+.search-box button{
+
+    background-color: transparent;
+    color: #ffffffc9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+nav .menu li a:hover{
+    background-color: #306af0;
+    color: #ffffff;
+    box-shadow: 5px 10px 30px rgba(43, 40, 239, 0.1);
+    transition: all ease;
+}
+nav .menu li a:active{
+    background-color: #306af0;
+    color: #ffffff;
+    box-shadow: 5px 10px 30px rgba(43, 40, 239, 0.1);
+    font-weight: bold;
+    
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 200px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Add your CSS styles here */
+
+/* Style the anchor tag to look like a button */
+#submitBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submitBtn:hover {
+  background-color: #0056b3;
+}
+
+
+#confirmationMessage {
+  display: none;
+  text-align: center;
+  margin-top: 10px; /* Adjust the spacing as needed */
+  color: #306af0;
+}
+
+
+  @media (max-width: 575px) {
+    nav .menu{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    nav .menu {
+        flex-wrap: wrap;
+    }
+    footer{
+        padding: 10px 20px;
+        text-align: center
+    }
+}
+

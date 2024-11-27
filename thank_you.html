@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #080808;
+        }
+       
+        .container {
+          max-width: 600px;
+          margin: 50px auto;
+          background-color: #080808;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin-top: 12%;
+          margin-bottom: 12%; 
+          box-shadow: 0 0 10px #306af0;
+          border: 2px solid #306af0;
+          animation: fadeIn 1s ease forwards;
+          position: relative;
+           
+        }
+
+        @keyframes fadeIn {
+          from {
+          opacity: 0;
+          transform: translateY(-20px);
+         }
+         to {
+          opacity: 1;
+          transform: translateY(0);
+         }
+       }
+
+    
+        h2 {
+          text-align: center;
+          margin-bottom: 20px;
+          color: #fff;
+        }
+    
+        p {
+          text-align: center;
+          font-size: 18px;
+          color: #fff;
+        }
+
+        .link-container {
+          text-align: center;
+          margin-top: 20px;
+        }
+    
+        .link-container a {
+          color: #306af0;
+          text-decoration: none;
+          font-weight: bold;
+        }
+    
+        .link-container a:hover {
+          text-decoration: underline;
+        }
+        .balloons {
+         position: absolute;
+         top: -100px;
+         left: 0;
+         width: 100%;
+         text-align: center;
+        }
+
+       .balloon {
+         display: inline-block;
+         width: 20px;
+        height: 30px;
+        background-color: snow;
+        border-radius: 50%;
+        margin:  0 10px;
+        position: relative;
+        animation: balloonFall 3s ease infinite;
+       }
+
+@keyframes balloonFall {
+  0% {
+    transform: translateY(-200px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(200px) rotate(360deg);
+  }
+  100% {
+    transform: translateY(-200px) rotate(0deg);
+  }
+}
+      
+        @media only screen and (max-width: 600px) {
+            .container {
+                   padding: 10px;
+                   border-radius: 5px;
+                 }
+               }
+      </style>
+</head>
+<body>
+   <div class="container">
+    <h2>Thank You!</h2>
+    <p>Your feedback has been submitted successfully.</p>
+    <div class="balloons">
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+    </div>
+    <div class="link-container">
+      <a href="index.html">Return to Homepage</a>
+    </div>
+  </div>
+</body>
+</html>
